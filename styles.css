@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Public+Sans:wght@300;400;600;700&display=swap');
+.modal-content{border-radius:12px}
+.modal-header{border-top-left-radius:12px; border-top-right-radius:12px}
+
+
+/* Appointment list */
+.list-group-item{border-radius:10px; margin-bottom:8px}
+.list-group-item h6{font-weight:700}
+
+
+/* Responsive improvements */
+@media (max-width:768px){
+.card{border-radius:10px}
+.navbar-brand{font-size:0.98rem}
+}
+
+
+/* -------------------------
+Floating SOS Button refinement
+-------------------------*/
+#sosBtn{width:64px; height:64px; border-radius:50%; box-shadow:var(--soft-shadow-2); display:flex; align-items:center; justify-content:center; font-size:22px}
+#sosBtn i{transform:translateY(-1px)}
+
+
+/* -------------------------
+Helper utilities
+-------------------------*/
+.text-muted-small{color:var(--muted); font-size:0.88rem}
+.badge-primary-soft{background: rgba(13,110,253,0.12); color:var(--primary); font-weight:600}
+
+
+/* subtle animation for cards on hover (desktop) */
+@media (hover:hover) and (min-width: 992px){
+.card:hover{transform: translateY(-6px); transition: transform .25s cubic-bezier(.2,.8,.2,1)}
+}
+
+
+/* Accessibility: focus outlines for keyboard users */
+a:focus, button:focus, input:focus{outline: 3px solid rgba(13,110,253,0.12); outline-offset:2px}
+
+
+/* Small print footer inside cards */
+.card-footer small{color:var(--muted);}
+
+
+/* -------------------------
+Print friendly
+-------------------------*/
+@media print{
+body{background:white}
+.navbar, .btn, .modal-backdrop{display:none!important}
+}
